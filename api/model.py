@@ -1,6 +1,7 @@
 import joblib
 import pandas as pd
 from pathlib import Path
+from schemas import CustomerInput
 
 MODEL_PATH = Path(__file__).parent.parent / "models" / "churn_classifier.pkl"
 

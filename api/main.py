@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from api.schemas import CustomerInput, CustomerOutput, BatchInput
-from api.model import predict_single, predict_batch
+from schemas import CustomerInput, CustomerOutput, BatchInput
+from model import predict_single, predict_batch
 from datetime import datetime
 
 app = FastAPI(
