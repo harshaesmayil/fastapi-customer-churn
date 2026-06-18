@@ -30,7 +30,7 @@ def health():
 
 @app.post("/predict", response_model=CustomerOutput)
 def predict(customer: CustomerInput):
-    result = predict_single(customer)
+    result = predict_single(customer.dict())
 
     # Save to history
     history.append({
@@ -44,7 +44,7 @@ def predict(customer: CustomerInput):
 
 @app.post("/predict/batch")
 def batch_predict(data: BatchInput):
-    results = predict_batch(data.customers)
+    results = predict_batch([c.dict() for c in data.customers])
 
     # Save each to history
     for customer, result in zip(data.customers, results):
