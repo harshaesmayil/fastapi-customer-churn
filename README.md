@@ -164,6 +164,17 @@ Predict churn for multiple customers in one request.
 
 ---
 
+## Deployment
+
+<img width="1118" height="683" alt="image" src="https://github.com/user-attachments/assets/ad13f111-61e3-47b4-b2f1-558b6655747f" />
+
+on render (this can be accessed on any device)
+
+<img width="1767" height="941" alt="image" src="https://github.com/user-attachments/assets/bcda98c0-4f89-4fbd-a3a8-0adacaaef2f2" />
+
+
+---
+
 ##  Testing
 
 You can test the API using:
